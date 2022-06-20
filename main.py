@@ -194,14 +194,14 @@ def update_graph_live():
     fig.append_trace({
         'x': df['time'].to_list(),
         'y': df['altitude_GPS'].to_list(),
-        'name': 'Altitude',
+        'name': 'По GPS',
         'mode': 'lines',
         'type': 'scatter'
     }, 1, 1)
     fig.append_trace({
         'x': df['time'].to_list(),
         'y': df['altitude_pres_sens'].to_list(),
-        'name': 'altitude_pres_sens',
+        'name': 'По барометру',
         'mode': 'lines',
         'type': 'scatter'
     }, 1, 1)
@@ -321,14 +321,14 @@ def update_graph_live4():
     fig.append_trace({
         'x': df['altitude_GPS'].iloc[:678].to_list(),
         'y': df['radiation_dinamic'].iloc[:678].to_list(),
-        'name': 'Altitude',
+        'name': 'По GPS',
         'mode': 'lines',
         'type': 'scatter'
     }, 1, 1)
     fig.append_trace({
         'x': df['altitude_pres_sens'].iloc[:678].to_list(),
         'y': df['radiation_dinamic'].iloc[:678].to_list(),
-        'name': 'Altitude',
+        'name': 'По барометру',
         'mode': 'lines',
         'type': 'scatter'
     }, 1, 1)
